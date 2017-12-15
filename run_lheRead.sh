@@ -4,6 +4,6 @@ types=("sp0_300" "sp0_400" "sp0_500" "sp0_600" "sp0_700" "sp0_800" "sp0_900" "sp
 
 for type in ${types[@]}
 do
-	python lheRead.py $type
+	python2 lheRead.py $type
 	#python lheRead_bkg.py $type
 done

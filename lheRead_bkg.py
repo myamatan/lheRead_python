@@ -50,6 +50,9 @@ if __name__ == "__main__":
 
     print('Processing "',inputDire+args[1]+'.lhe', '....')
 
+    if args[1]=='Zjets' : isbkg=True
+    else : isbkg=False
+
     for e in pylhe.readLHE (inputDire+args[1]+'.lhe'):
         X = TLorentzVector(0.,0.,0.,0.)
         Z1 = TLorentzVector(0.,0.,0.,0.)
